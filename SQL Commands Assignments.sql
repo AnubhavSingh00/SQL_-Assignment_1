@@ -37,8 +37,7 @@ select * FROM information_schema.key_column_usage;
   -- Question 8 
 -- List the total number of films whose replacement cost is greater than $15 and less than $20
   -- Answer
-  select * from film;
-select title, replacement_cost from film where replacement_cost > 15 and replacement_cost < 20;
+SELECT COUNT(*) AS total_films FROM film WHERE replacement_cost > 15 AND replacement_cost < 20;
 
   -- Question 9 
 -- Display the count of unique first name of actors
